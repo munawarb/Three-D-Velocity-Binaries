@@ -67,6 +67,11 @@ Because this game is fast action--with maximum speeds clocked at mach 2, we high
 <li><a href="#dmm">Death Match Mode (DMM)</a></li>
 <li><a href="#mm">Mission Mode (MM)</a></li>
 <li><a href="#apm">Auto Play Mode (APM)</a></li>
+<li><a href="#mpm">Multiplayer Mode</a>
+<ol class = "thirdSubhead">
+<li><a href = "#spec">Spectator Mode</a></li>
+<li><a href = "#server">Running The Server </a></li>
+</ol></li>
 </ol></li>
 <li><a href="#to">Taking Off</a></li>
 <li><a href="#ldg">Landing</a></li>
@@ -256,6 +261,49 @@ In Auto Play Mode (APM,) all aircraft will be controlled by the computer. You wi
 To activate APM, select "auto play mode" from the mode selection. You will then be presented with two options: <a href="#rm">Racing Mode</a> and <a href="#dm">Death Match Mode</a>. These options allow you to select which mode you wish for the computer to play.
 <p />
 When the match is finished, you will be returned to the main menu as usual. Selecting the mode selection menu again will revert the game back to the default setting--no APM.
+
+<h4><a name="mpm">Multiplayer Mode</a></h4>
+
+New in Three-D Velocity version 2 is the ability to pit your skills against other aspiring blind pilots. You can play the game online with other people by connecting to a TDV server that someone is hosting.
+<p />
+To connect to the multiplayer server, select "Multiplayer mode" from the mode selection menu. You will be asked to enter an IP address or domain name to connect to, and then asked for a call sign. The call sign is what other players will see you as on the server. You will receive status messages along the way as TDV tries to connect. Three-D Velocity tries to connect through several ports in case some of your outgoing traffic is blocked. These include ports 4444, 4445, 4567, 6969, and 32000.
+<p />
+If the game cannot connect to any of these ports, you will be informed of this and returned to the main menu.
+<p />
+Once you are in the multiplayer game, several options become available.
+<ul>
+<li>Press W to get a list of all players in the hangar. This is a list of players who haven't joined a game yet. You can press ENTER on a player to send them a private message. This command is available in a game as well.</li>
+<li>Press Grave to send a chat message to all players in the hangar. This message will be sent to players who have not joined a game yet. You can also chat in a game this way.</li>
+<li>Press F8 to read the previously sent message, and F9 to read the next message. F10 will copy the current message to the clipboard.</li>
+</ul>
+<p />
+The online game menu has several options from which to choose.
+<ul>
+<li>Join the free for all game: This option will put you in the Free for All ("FFA") room. An FFA game is created by the server and is always open. Any number of players can enter and leave at will and there are no rules like team alliances to contend with. Essentially, it's an open game for you to blow up anything and everything you see.</li>
+<li>Join an existing game: This option lets you join a player-created game. You can join one-on-one death matches or Team Death games. If no games are available, you will be placed at the top of the online game menu. Otherwise, you will get a list of the currently available games.</li>
+<li>Create a new game: This option lets you create a one-on-one death match or Team Death game. One-on-one death matches will take place between you and any number of other opponents. The difference between this type of game and the FFA is that this game is closed. Once the host starts the game, no more players can join. When there is one player remaining, the game will end. This is a battle to the death.
+<p />
+Team Death games allow you to pick a team whose ally you will become. There are a maximum of four teams from which to choose. Alliances cannot be changed in-game once chosen.
+<p />
+In a Team Death game, the last team to have players will be declared the winner. Members are scored individually based on the number of opponents shot down, and at the end of the game, all remaining team members on the winning team will earn points. Therefore, if you would like to enjoy the best benefits to playing on a team, you are encouraged to actively engage in battles. Circling above the action while your team members do all the dirty work won't help you.</li>
+</ul>
+
+<h5><a name = "spec">Spectator Mode</a></h5>
+
+When you join a game or start a new game, you will have the option to be a pilot or spectator. When you are a spectator, you can track other players and move amongst them. Press L to select a player to track.
+<p />
+When you track a player, you will hear the game from their perspective. If you get shot down during a pilot match, you will be given the option to go into spectator mode. You can observe the rest of the game this way. To exit Spectator Mode, press ESCAPE.
+
+<h5><a name = "server">Running The Server</a></h5>
+
+Since Three-D Velocity is now open-source, the server that enables players to connect online is available in the source distribution. If you want to host your own server, you need to start the server by clicking on the TDVServer.exe file.
+<p />
+You will see diagnostic messages appear in the console. At this point, you can type administrator commands to control parts of the server.
+<ul>
+<li>Type "message" to set a message of the day. The message of the day is shown to every player who connects to your server.</li>
+<li>Type "shutdown" to shutdown the server and send a five-minute warning to all players.</li>
+<li>Type "exit" to shut down the server immediately and boot all players without warning.</li>
+</ul>
 
 <h3><a name = "to">Taking Off</a></h3>
 
