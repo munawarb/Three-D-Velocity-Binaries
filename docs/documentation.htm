@@ -40,6 +40,7 @@ Because this game is fast action--with maximum speeds clocked at mach 2, we high
 <li>Microsoft Windows XP [32-bit, 64-bit] (all versions)</li>
 <li>Microsoft Windows Vista [32-bit, 64-bit] (all versions)</li>
 <li>Microsoft Windows 7 [32-bit, 64-bit] (all versions)</li>
+<li>Microsoft Windows 8, 8.1, and 10 [32-bit, 64-bit] (all versions)</li>
 </ul></li>
 </ul>
 * <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=333325FD-AE52-4E35-B531-508D977D32A6&amp;displaylang=en">Click here to download .NET 3.5.</a>
@@ -303,6 +304,20 @@ You will see diagnostic messages appear in the console. At this point, you can t
 <li>Type "message" to set a message of the day. The message of the day is shown to every player who connects to your server.</li>
 <li>Type "shutdown" to shutdown the server and send a five-minute warning to all players.</li>
 <li>Type "exit" to shut down the server immediately and boot all players without warning.</li>
+<li>Type "options" to set server options. From here, you can set the server timeout value.</li>
+</ul>
+<p />
+You can control the log level by using the --log switch on the command line. The server will always output minimal log information, but if you want verbose logging, you can control that from this switch. The syntax is:
+<br />
+--log level1,level2,...
+<br />
+The logging levels are:
+<ul>
+<li>info: Displays operational messages.</li>
+<li>debug: Displays verbose operational messages. If you notice the server crashing a lot, turning on debug logging might help to diagnose the issue.</li>
+<li>error: If there's a server error such as a crash or unexpected problem, it will get recorded. Note that having debug logging on will not automatically turn on error logging, and vice versa; you must set them both explicitly.</li>
+<li>chat: User chat messages are logged. By convention, the server does not log private messages (those sent by pressing W while in the hangar,) but you should be aware that the server is open source and anyone can modify their copy of the server to log private messages should they wish to do so.</li>
+<li>messages: Records system messages such as reboot warnings and players entering and leaving games.</li>
 </ul>
 
 <h3><a name = "to">Taking Off</a></h3>
