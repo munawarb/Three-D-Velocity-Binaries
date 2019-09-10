@@ -34,16 +34,15 @@ Because this game is fast action--with maximum speeds clocked at mach 2, we high
 <h3><a name="sr">System Requirements</a></h3>
 
 <ul>
-<li>Microsoft .NET Framework version 3.5 or higher *</li>
+<li>Microsoft .NET Framework version 4.7.2 or higher</li>
+<li>XAudio2*</li>
 <li>Supported Operating Systems: 
 <ul>
-<li>Microsoft Windows XP [32-bit, 64-bit] (all versions)</li>
-<li>Microsoft Windows Vista [32-bit, 64-bit] (all versions)</li>
 <li>Microsoft Windows 7 [32-bit, 64-bit] (all versions)</li>
 <li>Microsoft Windows 8, 8.1, and 10 [32-bit, 64-bit] (all versions)</li>
 </ul></li>
 </ul>
-* <a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=333325FD-AE52-4E35-B531-508D977D32A6&amp;displaylang=en">Click here to download .NET 3.5.</a>
+* <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35">If you get an XAudio2 error on startup, click here to download the DirectX Web Installer from Microsoft to install missing DirectX components</a>.
 
 <h2><a name = "contents">Contents</a></h2>
 <ol class = "head">
@@ -165,9 +164,9 @@ Special thanks go to:
 <br />
 - Lewis Briant for helping brainstorm the initial idea.
 <br />
-- Slim DX for the Slim DX library
+- Alexandre Mutel for the <a href="http://www.sharpdx.org">SharpDX library</a>
 <br />
-- and Roman Atachiants for the ogg vorbis decoder library.
+- and ioctlLR For the excellent <a href="https://github.com/ioctlLR/NVorbis">NVorbis Ogg decoder library</a>, allowing us to quite easily implement Ogg streaming using a managed solution; previously used a great but "unsafe" (as .NET terms it) Ogg Decoder written by Roman Atachiants which depended on C dlls.
 <p />
 Musicians were: Patrick Kelly, Kelly John Sapergia, and Ben Breen.
 <p />
@@ -791,7 +790,7 @@ Once your aircraft has been refueled and repaired, it will be catapulted off the
 
 <h3><a name = "brawl">Brawling</a></h3>
 
-Throughout the story, you will be required to engage in CQC (close-quarters combat) with other characters. Moves during these stages are fairly straightforward. Holding UP ARROW will move your character up, and holding DOWN, LEFT or RIGHT ARROW will move your character in those respective directions. Pressing SPACEBAR will punch your opponent. You can grab your opponent by holding LEFT ALT. If you grab your opponent, you will hold on to them until you release the LEFT ALT key, at which point your character will throw the opponent. If you are standing near a wall or other object, the opponent may get thrown up against the wall or into the object. This will hurt them more.
+Throughout the story, you will be required to engage in CQC (close-quarters combat) with other characters. Moves during these stages are fairly straightforward. Holding UP ARROW will move your character up, and holding DOWN, LEFT or RIGHT ARROW will move your character in those respective directions. Pressing SPACEBAR will punch your opponent. You can grab your opponent by holding LEFT CTRL. If you grab your opponent, you will hold on to them until you release the LEFT ALT key, at which point your character will throw the opponent. If you are standing near a wall or other object, the opponent may get thrown up against the wall or into the object. This will hurt them more.
 <p />
 If you throw your opponent, you will hear a bird-chirping sound. This sound means that your opponent is stunned. During this time, they are unable to do anything.
 <p />
@@ -1042,7 +1041,7 @@ If the computer detects that your primary interest is to lock on to a target, in
 </ul>
 <h2><a name = "glossary">Glossary</a></h2>
 <ul>
-<li>Ailerons: These are hinged extensions coming off the back of each wing. In a roll, the ailerons control the force of the air currents acting on each wing. The ailerons work in contradiction to each other and this is what helps the aircraft achieve the roll maneuver. For instance, if the aircraft was to roll left, the aileron on the left wing would be lowered, and the one on the right wing would be raised. In this manner, the force of the air on the right wing would lift the right wing up, and the force of the air on the left wing would force the left wing down.</li>
+<li>Ailerons: These are hinged extensions coming off the back of each wing. In a roll, the ailerons control the force of the air currents acting on each wing. The ailerons work in contradiction to each other and this is what helps the aircraft achieve the roll maneuver. For instance, if the aircraft was to roll left, the aileron on the left wing would be raised, and the one on the right wing would be lowered. In this manner, the force of the air on the right wing would lift the right wing up, and the force of the air on the left wing would force the left wing down.</li>
 <li>Angle of Attack: The angle between the wings of an aircraft and a fixed reference point, which will be taken as the ground in Three-D Velocity. An angle of attack between 1 and 90 degrees will direct the force of relative air currents above the airfoil, producing lift. Similarly, an angle of attack between -1 and -90 degrees will direct the force of relative air currents under the airfoil, which will cause a downward pitch of the aircraft and cause the aircraft to dive.</li><li>air speed: The speed of the air passing under the wings of an aircraft.</li>
 <li>Centrifugal Force: The outward force of a body moving around another body</li>
 <li>Critical Angle of Attack: The angle of attack at which a stall occurs. The critical angle is typically between 60 and 120 degrees, and is always the same no matter the speed of the aircraft.</li>
